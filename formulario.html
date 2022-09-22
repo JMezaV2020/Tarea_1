@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="formulario">
+        <h2>Ponga sus datos</h2>
+        <hr>
+        <form action="ingresar.php" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td> <input type="text" placeholder="Nombre" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td>Apellido:</td>
+                    <td> <input type="text" placeholder="Apellido" name="apellido" required></td>
+                </tr>
+                <tr>
+                    <td>Añadir imagen: <input name="archivo" id="archivo" type="file"/></td>
+                </tr>
+                <td>
+                    
+                    <input type="submit" value="ENVIAR" name="enviar"/>
+                    <input type="reset" value="BORRAR" name="Borrar"/>
+                </td>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
